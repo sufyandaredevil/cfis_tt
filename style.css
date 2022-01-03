@@ -1,0 +1,24 @@
+.legend {
+  list-style: none;
+}
+.legend li {
+  float: left;
+  margin-right: 10px;
+}
+.legend span {
+  border: 1px solid #ccc;
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin: 2px;
+}
+
+.legend .theory{
+  background-color: #9dc3fb;
+}
+.legend .lab{
+  background-color: #b6e7d1;
+}
+.legend .other{
+  background-color: #9ad9e7;
+}

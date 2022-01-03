@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- div to show the period -->
+
+        <div>
+          <div style="margin-top: 20px"></div>
+          <div>
+            Current Date, Time & Zone: 
+            <span style="font-weight: bold;" id="clock">Loading...</span>
+          </div>
+          <div>
+            Current Period Subject Code(s):
+            <span style="font-weight: bold;" id="currentPeriodCode">Loading...</span>
+          </div>
+
+          <div>
+            Current Period Subject Name:
+            <span style="font-weight: bold;" id="currentPeriodName">Loading...</span>
+          </div>
+
+          <div>
+            Current Period GCR Link:
+            <span style="font-weight: bold;" id="currentPeriodGCRLink">Loading...</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 20px"></div>
+        <h3>Google Meet Links</h3>
+        <ul class="legend">
+          <li><span class="theory"></span> Theory</li>
+          <li><span class="lab"></span> Lab</li>
+          <li><span class="other"></span> Other</li>
+        </ul>
+        <div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Subject Codes</th>
+                <th scope="col">Subject Names</th>
+                <th scope="col">GM Codes/Links</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary">
+                <td>MMA20I009</td>
+                <td>Mathematics for CFIS</td>
+                <td>
+                  <a
+                    style="text-decoration: none"
+                    target="blank"
+                    href="https://meet.google.com/zdy-egbb-izv"
+                    >ZDY-EGBB-IZV</a
+                  >
+                </td>
+              </tr>
+              <tr class="table-primary">
+                <td>MCS20I001</td>
+                <td>Digital Forensics</td>
+                <td>
+                  <a
+                    target="blank"
+                    style="text-decoration: none"
+                    href="https://meet.google.com/ttd-cetu-udq"
+                    >TTD-CETU-UDQ</a
+                  >
+                </td>
+              </tr>
+              <tr class="table-primary">
+                <td>MCS20IE01</td>
+                <td>Vulnerability Assessment & Penetration Testing</td>
+                <td>
+                  <a
+                    target="blank"
+                    style="text-decoration: none"
+                    href="https://meet.google.com/fxx-fwhj-rpc"
+                    >FXX-FWHJ-RPC
+                  </a>
+                </td>
+              </tr>
+              <tr class="table-primary">
+                <td>MCS20IE06</td>
+                <td>Advanced Computer Networks and Security</td>
+                <td>
+                  <a
+                    target="blank"
+                    style="text-decoration: none"
+                    href="https://meet.google.com/ymr-mhfc-dif"
+                    >YMR-MHFC-DIF
+                  </a>
+                </td>
+              </tr>
+              <tr class="table-primary">
+                <td>MET20RM01</td>
+                <td>Research Methodology and IPR</td>
+                <td>
+                  <a
+                    target="blank"
+                    style="text-decoration: none"
+                    href="https://meet.google.com/fgw-gsnt-mif"
+                    >FGW-GSNT-MIF
+                  </a>
+                </td>
+              </tr>
+              <tr class="table-primary">
+                <td>MET20AU07</td>
+                <td>Stress Management by Yoga (Audit Course 1)</td>
+                <td>
+                  <a
+                    target="blank"
+                    style="text-decoration: none"
+                    href="https://meet.google.com/kcv-dnvs-qoy"
+                    >KCV-DNVS-QOY
+                  </a>
+                </td>
+              </tr>
+              <tr class="table-success">
+                <td>MC20IL001</td>
+                <td>Digital Forensics Lab</td>
+                <td>
+                  <a
+                    target="blank"
+                    style="text-decoration: none"
+                    href="https://meet.google.com/ttd-cetu-udq"
+                    >TTD-CETU-UDQ
+                  </a>
+                </td>
+              </tr>
+              <tr class="table-success">
+                <td>MCS20IEL1</td>
+                <td>Vulnerability Assessment and Penetration Testing Lab</td>
+                <td>
+                  <a
+                    target="blank"
+                    style="text-decoration: none"
+                    href="https://meet.google.com/xeg-wkay-zpv"
+                    >XEG-WKAY-ZPV
+                  </a>
+                </td>
+              </tr>
+              <tr class="table-info">
+                <td>N/A</td>
+                <td>SEMINAR</td>
+                <td>
+                  <a
+                    target="blank"
+                    style="text-decoration: none"
+                    href="https://meet.google.com/anm-srsq-yqf"
+                    >ANM-SRSQ-YQF
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <h3>Time Table</h3>
+      <table class="table border border-3 table-bordered">
+        <tbody>
+          <tr style="text-align: center">
+            <td>
+              <p><strong>DAY</strong></p>
+            </td>
+            <td>
+              <p><strong>9.30-10.20</strong></p>
+            </td>
+            <td>
+              <p><strong>10.20-11.10</strong></p>
+            </td>
+            <td>
+              <p><strong>11.10-11.30</strong></p>
+            </td>
+            <td>
+              <p><strong>11.30-12.20</strong></p>
+            </td>
+            <td>
+              <p><strong>12.20-13.10</strong></p>
+            </td>
+            <td>
+              <p><strong>14.00-15.00</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><strong>Monday</strong></p>
+            </td>
+            <td class="table-primary">
+              <p>MMA20I009</p>
+            </td>
+            <td class="table-primary">
+              <p>MCS20I001</p>
+            </td>
+            <td
+              class="table-secondary"
+              style="text-align: center; vertical-align: middle"
+              rowspan="5"
+              width="82"
+            >
+              <p>Break</p>
+            </td>
+            <td class="table-primary">
+              <p>Audit course</p>
+            </td>
+            <td class="table-success">
+              <p>MC20IL001/ MCS20IEL1</p>
+            </td>
+            <td
+              class="table-secondary"
+              style="vertical-align: middle; text-align: center"
+              width="71"
+            >
+              <p>-</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="90">
+              <p><strong>Tuesday</strong></p>
+            </td>
+            <td class="table-primary">
+              <p>MMA20I009</p>
+            </td>
+            <td class="table-primary">
+              <p>MCS20IE01</p>
+            </td>
+            <td class="table-primary">
+              <p>MET20RM01</p>
+            </td>
+            <td class="table-success">
+              <p>MC20IL001</p>
+            </td>
+            <td class="table-secondary">
+              <p style="vertical-align: middle; text-align: center">-</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="90">
+              <p><strong>Wednesday</strong></p>
+            </td>
+            <td class="table-primary">
+              <p>MCS20I001</p>
+            </td>
+            <td class="table-primary">
+              <p>MMA20I009</p>
+            </td>
+            <td class="table-primary">
+              <p>Audit course</p>
+            </td>
+            <td class="table-primary">
+              <p>MET20RM01</p>
+            </td>
+            <td class="table-secondary">
+              <p style="vertical-align: middle; text-align: center">-</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="90">
+              <p><strong>Thursday</strong></p>
+            </td>
+            <td class="table-primary">
+              <p>MCS20I001</p>
+            </td>
+            <td class="table-primary">
+              <p>MCS20IE01</p>
+            </td>
+            <td class="table-primary">
+              <p>MET20RM01</p>
+            </td>
+            <td class="table-primary">
+              <p>MCS20IE01</p>
+            </td>
+            <td class="table-info">
+              <p>SEMINAR [MET20RM01]</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="90">
+              <p><strong>Friday</strong></p>
+            </td>
+            <td class="table-success">
+              <p>MCS20IEL1</p>
+            </td>
+            <td class="table-primary">
+              <p>MCS20IE06</p>
+            </td>
+            <td class="table-primary">
+              <p>MCS20IE06</p>
+            </td>
+            <td class="table-primary">
+              <p>MCS20IE06</p>
+            </td>
+            <td class="table-info">
+              <p>SEMINAR [MET20RM01]</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="lgc.js"></script>
+    <script type="text/javascript">
+      var clockElement = document.getElementById("clock")
+
+      function clock() {
+        var date = new Date()
+
+        // Replace '400px' below with where you want the format to change.
+        if (window.matchMedia("(max-width: 400px)").matches) {
+          // Use this format for windows with a width up to the value above.
+          clockElement.textContent = date.toLocaleString()
+        } else {
+          // While this format will be used for larger windows.
+          clockElement.textContent = date.toString()
+        }
+      }
+
+      setInterval(clock, 1000)
+    </script>
+  </body>
+</html>
