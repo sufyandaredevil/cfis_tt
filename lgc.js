@@ -163,8 +163,8 @@ function runPeriodMisc() {
     if (subjectCodesNamesCodes[timeTable[day][i]].gcrCode.includes("/")) {
       gcr1 = subjectCodesNamesCodes[timeTable[day][i]].gcrCode.split("/")[0]
       gcr2 = subjectCodesNamesCodes[timeTable[day][i]].gcrCode.split("/")[1]
-      gcrLink1 = `<a style="text-decoration: none;" href="https://meet.google.com/${gcr1}">${gcr1.toUpperCase()}</a>`
-      gcrLink2 = `<a style="text-decoration: none;" href="https://meet.google.com/${gcr2}">${gcr2.toUpperCase()}</a>`
+      gcrLink1 = `<a target="_blank" style="text-decoration: none;" href="https://meet.google.com/${gcr1}">${gcr1.toUpperCase()}</a>`
+      gcrLink2 = `<a target="_blank" style="text-decoration: none;" href="https://meet.google.com/${gcr2}">${gcr2.toUpperCase()}</a>`
       document.getElementById("currentPeriodGCRLink").innerHTML =
         gcrLink1 + " / " + gcrLink2
     } else if (subjectCodesNamesCodes[timeTable[day][i]].gcrCode == "None") {
@@ -172,7 +172,7 @@ function runPeriodMisc() {
       document.getElementById("currentPeriodGCRLink").innerHTML = gcrLink
     } else {
       gcr = subjectCodesNamesCodes[timeTable[day][i]].gcrCode
-      gcrLink = `<a style="text-decoration: none;" href="https://meet.google.com/${gcr}">${gcr.toUpperCase()}</a>`
+      gcrLink = `<a target="_blank" style="text-decoration: none;" href="https://meet.google.com/${gcr}">${gcr.toUpperCase()}</a>`
       document.getElementById("currentPeriodGCRLink").innerHTML = gcrLink
     }
   }
