@@ -182,8 +182,8 @@ function runPeriodMisc() {
 
 function isBetweenInterval(startTime, endTime) {
   var format = "hh:mm"
-  var currentTime = moment("13:09", format)
-  // var currentTime = moment()
+  // var currentTime = moment("13:09", format)
+  var currentTime = moment()
   var st = moment(`${startTime.hour}:${startTime.minute}`, format)
   var et = moment(`${endTime.hour}:${endTime.minute}`, format)
 
