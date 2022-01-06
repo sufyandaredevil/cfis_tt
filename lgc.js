@@ -1,5 +1,7 @@
 //MTech CFIS
 
+var clockElement = document.getElementById("clock")
+
 subjectCodesNamesCodes = {
   MMA20I009: {
     subjectName: "Mathematics for CFIS",
@@ -180,8 +182,8 @@ function runPeriodMisc() {
 
 function isBetweenInterval(startTime, endTime) {
   var format = "hh:mm"
-  // var currentTime = moment("13:09", format)
-  var currentTime = moment()
+  var currentTime = moment("13:09", format)
+  // var currentTime = moment()
   var st = moment(`${startTime.hour}:${startTime.minute}`, format)
   var et = moment(`${endTime.hour}:${endTime.minute}`, format)
 
@@ -193,4 +195,5 @@ function isBetweenInterval(startTime, endTime) {
 }
 
 runPeriodMisc()
-setInterval(runPeriodMisc, 60000/2)
+setInterval(runPeriodMisc, 5000)
+setInterval(() => (clockElement.textContent = new Date().toString()), 1000)

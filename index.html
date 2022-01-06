@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="tt.png" />
     <link rel="stylesheet" href="style.css" />
     <title>CFIS TT</title>
   </head>
@@ -313,23 +314,5 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="lgc.js"></script>
-    <script type="text/javascript">
-      var clockElement = document.getElementById("clock")
-
-      function clock() {
-        var date = new Date()
-
-        // Replace '400px' below with where you want the format to change.
-        if (window.matchMedia("(max-width: 400px)").matches) {
-          // Use this format for windows with a width up to the value above.
-          clockElement.textContent = date.toLocaleString()
-        } else {
-          // While this format will be used for larger windows.
-          clockElement.textContent = date.toString()
-        }
-      }
-
-      setInterval(clock, 1000)
-    </script>
   </body>
 </html>
