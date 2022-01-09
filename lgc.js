@@ -81,6 +81,14 @@ periodIntervals = {
 }
 
 timeTable = {
+  sunday: {
+    1: "NONE",
+    2: "NONE",
+    3: "NONE",
+    4: "NONE",
+    5: "NONE",
+    6: "NONE",
+  },
   monday: {
     1: "MMA20I009",
     2: "MCS20I001",
@@ -120,6 +128,14 @@ timeTable = {
     4: "MCS20IE06",
     5: "MCS20IE06",
     6: "SEMINAR",
+  },
+  saturday: {
+    1: "NONE",
+    2: "NONE",
+    3: "NONE",
+    4: "NONE",
+    5: "NONE",
+    6: "NONE",
   },
 }
 
