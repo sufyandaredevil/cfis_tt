@@ -146,7 +146,6 @@ function runPeriodMisc() {
         periodIntervals[i].endTime
       )
     ) {
-      console.log(timeTable[day][i])
       isPeriodAvailable = true
       break
     }
