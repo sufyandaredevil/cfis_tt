@@ -3,49 +3,41 @@
 var clockElement = document.getElementById("clock")
 
 subjectCodesNamesCodes = {
-  MMA20I009: {
-    subjectName: "Mathematics for CFIS",
-    gcrCode: "zdy-egbb-izv",
+  MCS20C002: {
+    subjectName: "Advanced Algorithms",
+    gcrCode: "upq-ysmf-qga",
   },
-  MCS20I001: {
-    subjectName: "Digital Forensics",
-    gcrCode: "ttd-cetu-udq",
+  MCS20C003: {
+    subjectName: "Soft Computing",
+    gcrCode: "oyc-duxd-ynm",
   },
-  MCS20IE01: {
-    subjectName: "Vulnerability Assessment and Penetration Testing",
-    gcrCode: "fxx-fwhj-rpc",
+  MCS20IE07: {
+    subjectName: "Information Security",
+    gcrCode: "owe-rbre-pkq",
   },
-  MCS20IE06: {
-    subjectName: "Advanced Computer Networks Security",
-    gcrCode: "ymr-mhfc-dif",
+  MCS20IE11: {
+    subjectName: "Cyber Crime Investigation",
+    gcrCode: "gtq-hbhs-vcg",
   },
-  MET20RM01: {
-    subjectName: "Research Methodology and IPR",
-    gcrCode: "fgw-gsnt-mif",
+  MET20AU02: {
+    subjectName: "Disaster Management",
+    gcrCode: "pmb-kgwp-diz",
   },
-  MET20AU07: {
-    subjectName: "Stress Management by Yoga",
-    gcrCode: "kcv-dnvs-qoy",
+  MCS20CL02: {
+    subjectName: "Advanced Algorithm Lab",
+    gcrCode: "sqz-ykps-ies",
   },
-  MC20IL001: {
-    subjectName: "Digital Forensics Lab",
-    gcrCode: "ttd-cetu-udq",
+  MCS20IEL11: {
+    subjectName: "Cyber Crime Investigation Lab",
+    gcrCode: "sor-rkjp-jsx",
   },
-  MCS20IEL1: {
-    subjectName: "Vulnerability Assessment and Penetration Testing Lab",
-    gcrCode: "xeg-wkay-zpv",
-  },
-  "MC20IL001 / MCS20IEL1": {
-    subjectName: "Digital Forensics Lab / VAPT Lab",
-    gcrCode: "ttd-cetu-udq/xeg-wkay-zpv",
+  MCS20IL02: {
+    subjectName: "Mini Project with Seminar",
+    gcrCode: "fkj-aavw-hih",
   },
   BREAK: {
     subjectName: "Break",
     gcrCode: "None",
-  },
-  SEMINAR: {
-    subjectName: "Seminar",
-    gcrCode: "anm-srsq-yqf",
   },
   NONE: {
     subjectName: "None",
@@ -55,28 +47,24 @@ subjectCodesNamesCodes = {
 
 periodIntervals = {
   1: {
-    startTime: { hour: "9", minute: "30" },
-    endTime: { hour: "10", minute: "20" },
+    startTime: { hour: "9", minute: "20" },
+    endTime: { hour: "10", minute: "10" },
   },
   2: {
-    startTime: { hour: "10", minute: "20" },
-    endTime: { hour: "11", minute: "10" },
+    startTime: { hour: "10", minute: "10" },
+    endTime: { hour: "11", minute: "00" },
   },
   3: {
-    startTime: { hour: "11", minute: "10" },
-    endTime: { hour: "11", minute: "30" },
+    startTime: { hour: "11", minute: "00" },
+    endTime: { hour: "11", minute: "20" },
   },
   4: {
-    startTime: { hour: "11", minute: "30" },
-    endTime: { hour: "12", minute: "20" },
+    startTime: { hour: "11", minute: "20" },
+    endTime: { hour: "12", minute: "10" },
   },
   5: {
-    startTime: { hour: "12", minute: "20" },
-    endTime: { hour: "13", minute: "10" },
-  },
-  6: {
-    startTime: { hour: "14", minute: "00" },
-    endTime: { hour: "15", minute: "00" },
+    startTime: { hour: "12", minute: "10" },
+    endTime: { hour: "13", minute: "00" },
   },
 }
 
@@ -87,47 +75,41 @@ timeTable = {
     3: "NONE",
     4: "NONE",
     5: "NONE",
-    6: "NONE",
   },
   monday: {
-    1: "MMA20I009",
-    2: "MCS20I001",
+    1: "MCS201EL11",
+    2: "MCS201EL11",
     3: "BREAK",
-    4: "MET20AU07",
-    5: "MC20IL001 / MCS20IEL1",
-    6: "NONE",
+    4: "MCS201EL11",
+    5: "MET20AU02",
   },
   tuesday: {
-    1: "MMA20I009",
-    2: "MCS20IE01",
+    1: "MCS20C002",
+    2: "MCS20IL02",
     3: "BREAK",
-    4: "MET20RM01",
-    5: "MC20IL001",
-    6: "NONE",
+    4: "MCS20IL02",
+    5: "MCS20C002",
   },
   wednesday: {
-    1: "MCS20I001",
-    2: "MMA20I009",
+    1: "MCS20C002",
+    2: "MCS20IE07",
     3: "BREAK",
-    4: "MET20AU07",
-    5: "MET20RM01",
-    6: "NONE",
+    4: "MCS20IE07",
+    5: "MCS201E11",
   },
   thursday: {
-    1: "MCS20I001",
-    2: "MCS20IE01",
+    1: "MCS20CL02",
+    2: "MCS20CL02",
     3: "BREAK",
-    4: "MET20RM01",
-    5: "MCS20IE01",
-    6: "SEMINAR",
+    4: "MCS201E11",
+    5: "MCS201E11",
   },
   friday: {
-    1: "MCS20IEL1",
-    2: "MCS20IE06",
+    1: "MCS20IE07",
+    2: "MCS20C003",
     3: "BREAK",
-    4: "MCS20IE06",
-    5: "MCS20IE06",
-    6: "SEMINAR",
+    4: "MCS20C003",
+    5: "MCS20C003",
   },
   saturday: {
     1: "NONE",
@@ -135,7 +117,6 @@ timeTable = {
     3: "NONE",
     4: "NONE",
     5: "NONE",
-    6: "NONE",
   },
 }
 
