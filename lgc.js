@@ -77,10 +77,10 @@ timeTable = {
     5: "NONE",
   },
   monday: {
-    1: "MCS201EL11",
-    2: "MCS201EL11",
+    1: "MCS20IEL11",
+    2: "MCS20IEL11",
     3: "BREAK",
-    4: "MCS201EL11",
+    4: "MCS20IEL11",
     5: "MET20AU02",
   },
   tuesday: {
@@ -95,14 +95,14 @@ timeTable = {
     2: "MCS20IE07",
     3: "BREAK",
     4: "MCS20IE07",
-    5: "MCS201E11",
+    5: "MCS20IE11",
   },
   thursday: {
     1: "MCS20CL02",
     2: "MCS20CL02",
     3: "BREAK",
-    4: "MCS201E11",
-    5: "MCS201E11",
+    4: "MCS20IE11",
+    5: "MCS20IE11",
   },
   friday: {
     1: "MCS20IE07",
@@ -178,7 +178,7 @@ function runPeriodMisc() {
 
 function isBetweenInterval(startTime, endTime) {
   var format = "hh:mm"
-  // var currentTime = moment("13:09", format)
+  // var currentTime = moment("13:00", format)
   var currentTime = moment()
   var st = moment(`${startTime.hour}:${startTime.minute}`, format)
   var et = moment(`${endTime.hour}:${endTime.minute}`, format)
